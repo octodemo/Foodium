@@ -15,9 +15,13 @@ name: Scan with Detekt
 on:
   # Triggers the workflow on push or pull request events but only for default and protected branches
   push:
-    branches: [ $default-branch, $protected-branches ]
+    branches: [ master ]
   pull_request:
-    branches: [ $default-branch ]
+    branches: [ master ]
+#  push:
+#    branches: [ $default-branch, $protected-branches ]
+#  pull_request:
+#    branches: [ $default-branch ]
 #  schedule:
 #     - cron: $cron-weekly
 
